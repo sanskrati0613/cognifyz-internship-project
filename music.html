@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Music Search</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="navbar">
+    <a href="index.html">Home</a>
+    <a href="music.html">Search Music</a>
+    <a href="playlist.html">Playlist</a>
+    <a href="contact.html">Contact</a>
+    <button onclick="changeBackground()">Change Background Color</button>
+  </nav>
+
+  <!-- Main Content -->
+  <main>
+    <!-- Header -->
+    <div class="music-header">
+      <img src="/assets/logo.png" alt="Logo" class="header-logo" />
+      <h1>Music Preview (iTunes API)</h1>
+    </div>
+
+    <!-- Search Bar -->
+    <section class="search-wrapper">
+      <div class="search-container">
+        <label for="musicSearch" class="visually-hidden">Search Music</label>
+        <input type="text" id="musicSearch" placeholder="Search for a song..." />
+        <button class="searchBtn" onclick="searchMusic()">Search</button>
+      </div>
+
+      <h3 class="recent-heading">Recent Searches</h3>
+      <div id="recentSearches" class="recent-searches"></div>
+
+      <!-- Search Results -->
+      <div id="musicContainer"></div>
+    </section>
+
+    <!-- Bookmarks Section -->
+    <section class="bookmark-section">
+      <h2>Bookmarked Tracks</h2>
+      <div id="bookmarkedContainer"></div>
+    </section>
+
+    <!-- Toast Message -->
+    <div id="toast" class="toast">Added to playlist ✅</div>
+  </main>
+
+  <!-- Scripts -->
+  <script src="script.js" defer></script>
+</body>
+</html>

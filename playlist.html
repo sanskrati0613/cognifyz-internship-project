@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Your Playlist</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="navbar">
+    <a href="index.html">Home</a>
+    <a href="music.html">Search Music</a>
+    <a href="playlist.html">Playlist</a>
+    <a href="contact.html">Contact</a>
+    <button onclick="changeBackground()">Change Background Color</button>
+  </nav>
+
+  <!-- Main Playlist Section -->
+  <main class="playlist-section">
+    <h2>Your Playlist</h2>
+    <div id="playlistContainer"></div>
+  </main>
+
+  <!-- Scripts -->
+  <script defer>
+    document.addEventListener("DOMContentLoaded", () => {
+      if (typeof renderPlaylist === "function") {
+        renderPlaylist();
+      } else {
+        console.error("renderPlaylist() is not defined.");
+      }
+    });
+  </script>
+  <script src="script.js" defer></script>
+</body>
+</html>

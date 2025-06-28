@@ -1,0 +1,625 @@
+/* --------------------- */
+/* Base Styles */
+/* --------------------- */
+body {
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f7faff;
+  color: #2d3436;
+  line-height: 1.6;
+  transition: background-color 0.4s ease;
+}
+
+h1 {
+  color: #6c63ff;
+  font-size: 36px;
+  text-align: center;
+}
+
+h2 {
+  color: #6c63ff;
+  margin-top: 30px;
+}
+
+p {
+  font-size: 18px;
+  color: #444;
+}
+
+footer {
+  text-align: center;
+  color: #888;
+  background-color: #f0f0f0;
+  padding: 1rem 0;
+}
+
+/* --------------------- */
+/* Navbar */
+/* --------------------- */
+.navbar {
+  width: 75%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #6c63ff;
+  padding: 1em 2em;
+  border: none;
+  border-radius: 2rem;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  flex-wrap: wrap;
+  margin: 1rem auto;
+}
+
+.navbar a {
+  color: #fff;
+  text-decoration: none;
+  margin-right: 1.5em;
+  font-weight: 600;
+  transition: color 0.2s ease;
+}
+
+.navbar a:hover {
+    color: #ffd700;
+}
+
+.navbar button {
+    background: #fff;
+    border: none;
+    padding: 0.8rem 1.5rem;
+    border-radius: 2rem;
+    font-size: 1rem;
+    color: #6c63ff;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.navbar button:hover {
+  background-color: yellowgreen;
+  color: #333;
+}
+
+/* --------------------- */
+/* Hero Section */
+/* --------------------- */
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 4rem 2rem;
+  background: linear-gradient(135deg, #6c63ff, #4a47a3);
+  color: white;
+  border-radius: 12px;
+  margin: 2rem auto;
+  max-width: 1000px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+.hero .highlight {
+  color: #ffd700;
+}
+
+.hero-content {
+  display: flex;
+  align-items: center;
+  gap: 2.5rem;
+  flex-wrap: wrap;
+  width: 100%;
+  max-width: 900px;
+}
+
+.intro-text {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 0.8rem;
+}
+
+.intro-text h1 {
+  font-size: 2.5rem;
+  margin: 0;
+  font-weight: 700;
+  color: #ffffff;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+.intro-text .highlight {
+  color: #ffd700;
+}
+
+.intro-text h2 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #e0e0ff;
+  margin: 0;
+}
+
+.intro-text p {
+  font-size: 1rem;
+  color: #f3f3f3;
+  margin: 0;
+}
+
+.intro-image {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 4px solid white;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+  flex-shrink: 0;
+}
+
+.intro-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+/* --------------------- */
+/* About and Goals */
+/* --------------------- */
+.about, .goals {
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 1rem 2rem;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+.about h2, .goals h2 {
+  color: #6c63ff;
+}
+
+.goals ul {
+  padding-left: 1.2rem;
+}
+
+.goals li {
+  margin: 0.5rem 0;
+  font-size: 1rem;
+}
+
+/* --------------------- */
+/* Contact Form */
+/* --------------------- */
+form {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 500px;
+  margin: 20px auto;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+form label {
+  font-weight: bold;
+  margin-top: 10px;
+  display: block;
+}
+
+form input,
+form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  display: block;
+  margin-bottom: 10px;
+}
+
+form button {
+  margin-top: 15px;
+  padding: 10px 20px;
+  background-color: #4B0082;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+form button:hover {
+  background-color: #6a0dad;
+}
+
+.Contact {
+  text-align: center;
+}
+
+/* --------------------- */
+/* Music Search & Recent */
+/* --------------------- */
+.music-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin: 2em auto;
+  text-align: center;
+}
+
+.header-logo {
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
+  border: 4px solid #ccc;
+  border-radius: 10px;
+}
+
+.search-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.8rem;
+  margin: 2rem auto;
+  padding: 1rem;
+  width: 75%;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  flex-wrap: wrap;
+}
+
+.search-container input[type="text"] {
+  flex: 1;
+  min-width: 200px;
+  padding: 0.6rem 1rem;
+  border: 2px solid #6c63ff;
+  border-radius: 8px;
+  font-size: 1rem;
+  outline: none;
+  transition: border-color 0.3s;
+}
+
+.search-container input[type="text"]:focus {
+  border-color: #4a47a3;
+}
+
+.searchBtn {
+  padding: 0.6rem 1.2rem;
+  background-color: #6c63ff;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.searchBtn:hover {
+  background-color: #4a47a3;
+}
+
+.recent-searches {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-top: -1rem;
+  margin-bottom: 2rem;
+  background-color: #f0f4ff;
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.04);
+  width: 100%;
+}
+
+.recent-searches button {
+  background-color: #6c63ff;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.recent-searches button:hover {
+  background-color: #4a47a3;
+}
+
+.recent-chip {
+  display: flex;
+  align-items: center;
+  background-color: #6c63ff;
+  color: white;
+  border-radius: 999px;
+  margin: 0.3rem;
+  padding: 0.4rem 0.6rem 0.4rem 0.8rem;
+}
+
+.recent-chip button {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 0.9rem;
+  cursor: pointer;
+  padding: 0;
+  margin-right: 0.5rem;
+}
+
+.recent-chip button:hover {
+  text-decoration: underline;
+}
+
+.close-icon {
+  cursor: pointer;
+  font-size: 0.9rem;
+  background-color: white;
+  color: #6c63ff;
+  border-radius: 50%;
+  width: 18px;
+  height: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  transition: background-color 0.2s;
+}
+
+.close-icon:hover {
+  background-color: #eee;
+}
+
+/* --------------------- */
+/* Song Cards & Playlist */
+/* --------------------- */
+.song-card {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1.5rem;
+  border: 1px solid #ddd;
+  background-color: #fff;
+  border-radius: 12px;
+  padding: 1rem 1.5rem;
+  margin: 1.5rem 0;
+  width: 100%;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+  transition: transform 0.2s ease;
+}
+
+.song-card:hover {
+  transform: translateY(-3px);
+}
+
+.song-card img {
+  width: 100px;
+  height: 100px;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.song-card .info {
+  flex: 1;
+}
+
+.song-card strong {
+  font-size: 1.1rem;
+  color: #333;
+}
+
+.song-card p {
+  margin: 0.3rem 0;
+  color: #666;
+}
+
+.song-card a {
+  display: inline-block;
+  margin-top: 0.4rem;
+  text-decoration: none;
+  color: #6c63ff;
+  font-weight: 500;
+}
+
+.song-card a:hover {
+  text-decoration: underline;
+}
+
+/* --------------------- */
+/* Playlist Buttons & Section */
+/* --------------------- */
+.playlist-section {
+  margin: 3rem auto;
+  padding: 1rem;
+  width: 90%;
+  max-width: 800px;
+}
+
+.bookmark-btn, .playlist-btn {
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 6px;
+  margin-top: 0.5rem;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.2s;
+}
+
+.bookmark-btn {
+  background-color: #6c63ff;
+  color: #222;
+}
+
+.bookmark-btn:hover {
+  background-color: blueviolet;
+}
+
+.playlist-btn {
+  background-color: #4caf50;
+  color: white;
+}
+
+.playlist-btn:hover {
+  background-color: #388e3c;
+}
+
+.remove-bookmark {
+  cursor: pointer;
+  font-size: 1.2rem;
+  background-color: #ffdddd;
+  color: #b00020;
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  transition: background-color 0.2s;
+}
+
+.remove-bookmark:hover {
+  background-color: #ffb3b3;
+}
+
+.remove-btn {
+  background-color: #ff6666;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.remove-btn:hover {
+  background-color: #cc0000;
+}
+
+.clear-btn {
+  display: block;
+  margin: 1.5rem auto 0;
+  padding: 0.6rem 1.2rem;
+  background-color: #444;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.clear-btn:hover {
+  background-color: #222;
+}
+
+/* --------------------- */
+/* Toast Notification */
+/* --------------------- */
+.toast {
+  visibility: hidden;
+  min-width: 250px;
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  border-radius: 8px;
+  padding: 1rem;
+  position: fixed;
+  left: 50%;
+  bottom: 30px;
+  transform: translateX(-50%);
+  z-index: 1000;
+  opacity: 0;
+  transition: opacity 0.4s ease, bottom 0.4s ease;
+}
+
+.toast.show {
+  visibility: visible;
+  opacity: 1;
+  bottom: 50px;
+}
+
+/* --------------------- */
+/* Accessibility Utility */
+/* --------------------- */
+.visually-hidden {
+  position: absolute;
+  left: -9999px;
+}
+
+/* --------------------- */
+/* Media Queries */
+/* --------------------- */
+@media screen and (max-width: 768px) {
+  h1 {
+    font-size: 28px;
+  }
+  p {
+    font-size: 16px;
+  }
+  img {
+    width: 90%;
+  }
+  .navbar {
+    width: 95%;
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .navbar a,
+  .navbar button {
+    margin: 0.5em 0;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .song-card {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .song-card img {
+    width: 80px;
+    height: 80px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  body {
+    padding: 5px;
+  }
+
+  h1 {
+    font-size: 24px;
+  }
+
+  h2 {
+    font-size: 18px;
+  }
+
+  p {
+    font-size: 14px;
+  }
+
+  img {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .hero-content {
+    flex-direction: column-reverse;
+    align-items: center;
+    text-align: center;
+  }
+
+  .intro-text {
+    text-align: center;
+  }
+
+  .intro-text h1 {
+    font-size: 2rem;
+  }
+
+  .intro-image {
+    width: 150px;
+    height: 150px;
+  }
+}
+
+

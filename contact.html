@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact | Sanskrati Jain</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="navbar">
+    <a href="index.html">Home</a>
+    <a href="music.html">Search Music</a>
+    <a href="playlist.html">Playlist</a>
+    <a href="contact.html">Contact</a>
+    <button onclick="changeBackground()">Change Background Color</button>
+  </nav>
+
+  <!-- Contact Section -->
+  <section class="contact-section">
+    <h1>Contact Form</h1>
+    <form id="contact-form" onsubmit="return validateForm()">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required />
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required />
+
+      <label for="message">Message:</label>
+      <textarea id="message" name="message" rows="4" required></textarea>
+
+      <button type="submit">Submit</button>
+      <p id="form-error" style="color: red;"></p>
+    </form>
+  </section>
+
+  <!-- Footer (optional) -->
+  <footer>
+    <p>&copy; 2025 Sanskrati Jain. All rights reserved.</p>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="script.js" defer></script>
+</body>
+</html>
